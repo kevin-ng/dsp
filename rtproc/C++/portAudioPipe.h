@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#ifdef WINDOWS
+#ifdef WIN32
 #include <conio.h>
 #include "PortAudio.h"
 #define PRINTOPTION printf
