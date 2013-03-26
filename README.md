@@ -19,4 +19,4 @@ simply wanted to get something running so that it would be possible to test the 
 totally awesome!
 
 There is no license for this code, but I consider the code to be the property of Paolo Prandoni, Martin Vetterli, and
-the Ecole Polytechnique Federale de Lausanne.
+the &Egrave;cole Polytechnique F&Egrave;d&egrave;rale de Lausanne.
