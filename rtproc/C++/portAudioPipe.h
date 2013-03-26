@@ -12,10 +12,13 @@
 #include "PortAudio.h"
 #define PRINTOPTION printf
 #ifndef initscr
-#define initscr
+#define initscr()
 #endif
 #ifndef endwin
-#define endwin
+#define endwin()
+#endif
+#ifndef clear
+#define clear()
 #endif
 #else
 #include <ncurses.h>
