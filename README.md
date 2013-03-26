@@ -16,7 +16,7 @@ There are two projects in this repository:
 
 I should note that neither of these projects has been coded so that they are perfectly error-tolerant in all cases - I 
 simply wanted to get something running so that it would be possible to test the digital filter effects, which are
-totally awesome!<br><br>
+totally awesome!
 
 There is no license for this code, but I consider the code to be the property of Paolo Prandoni, Martin Vetterli, and
 the Ecole Polytechnique Federale de Lausanne.
