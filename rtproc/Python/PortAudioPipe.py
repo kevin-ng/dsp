@@ -89,11 +89,17 @@ class PortAudioPipe:
                     current_block = []
                     for j in range(0,len(sample_block),FRAMES_PER_BUFFER):
                         aux = long(struct.unpack('i', sample_block[j:j+FRAMES_PER_BUFFER])[0])
-                        current_block = current_block + [struct.pack('i', self._sound_processor.Process(float(aux)))]
+                        current_block = current_block + \
+                            [struct.pack('i', self._sound_processor.Process(float(aux)))]
                     self._ostream.write(''.join(current_block), FRAMES_PER_BUFFER)
                 except IOError as e:
                     self._err = e.errno
                     self.xrun()
+                except struct.error:
+                    # Occasionally, a sample goes out of range for the struct.pack
+                    # function.  Rather than fail out, allow the processing to
+                    # continue, effectively throwing this sample out
+                    pass
             else:
                 effect = sys.stdin.read(1)
                 if effect.upper() == 'Q':

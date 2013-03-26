@@ -196,7 +196,7 @@ class SoundProcessor:
         # y[n] = (1 + cos(wn)x[n])
         self._tremolo.__dict__['omega'] = \
             self._tremolo.__dict__['omega'] + self._tremolo.__dict__['phi']
-        return (1.0 + cos(self._tremolo.omega) / 2.0) * self._pX[self._Ix]
+        return (1.0 + cos(self._tremolo.__dict__['omega']) / 2.0) * self._pX[self._Ix]
 
     def _flanger(self):
         # Set up the "static" method variables
