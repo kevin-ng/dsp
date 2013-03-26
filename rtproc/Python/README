@@ -1,0 +1,23 @@
+To run the application, simply type 'python rtproc'.
+
+The following are required to run:
+
+1.  PortAudio must be installed.  It can be found at 
+
+    http://www.portaudio.com/download.html
+
+2.  PyAudio must be installed *after* PortAudio.  It can be found at
+
+    http://people.csail.mit.edu/hubert/pyaudio/#downloads
+
+NOTES:
+
+1.  This application has only been tested on Linux, but it should run on Unix,
+    Windows, OS X, and basically anywhere that PortAudio and PyAudio are
+    supported.
+
+KNOWN DEFECTS:
+
+03/26/2013 --- The 'fuzz' effect doesn't seem to be working.  I am looking
+               into this currently and hope to have a resolution very
+               soon.

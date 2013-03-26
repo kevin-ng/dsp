@@ -1,0 +1,31 @@
+To build the rtproc application, the following requirements must be met:
+
+1.  PortAudio must be installed.  It can be found at 
+
+    http://www.portaudio.com/download.html
+
+    The Makefile assumes that PortAudio was installed in /usr/local, so that
+    the portaudio.h header file is located in /usr/local/include.  If the 
+    library is installed elsewhere, simply edit the INCLUDES variable in the
+    Makefile to point to the location of the portaudio.h header file.  So,
+    for example, if PortAudio was installed in /home/elvis, and the 
+    portaudio.h header file is thus located in /home/elvis/include, simply
+    edit the INCLUDES in the Makefile to look like this:
+
+    INCLUDES = -I. -I/home/elvis/include 
+
+2.  ncurses must be installed.  It can be found at
+
+    http://ftp.gnu.org/pub/gnu/ncurses/
+
+3.  GNU make must be installed.  It can be found at
+
+    http://ftp.gnu.org/gnu/make/
+
+4.  The Makefile is by default set to build in Release.  This means that
+    the Release subdirectory one level deeper than the Makefile is used
+    for the location of the object files and application.  It also means
+    that the -g compile flag is not used, so that the application cannot
+    be source-level debugged in gdb.  To switch to a Debug build, simply
+    edit the CONFIGURATION variable in the Makefile to be Debug rather
+    than Release.
