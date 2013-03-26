@@ -1,3 +1,6 @@
+// Created by Paolo Prandoni and Martin Vetterli of the Ecole Polytechnique
+// Federale de Lausanne
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

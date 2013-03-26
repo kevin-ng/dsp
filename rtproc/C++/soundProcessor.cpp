@@ -1,3 +1,6 @@
+// Created by Paolo Prandoni and Martin Vetterli of the Ecole Polytechnique
+// Federale de Lausanne
+
 #include "soundProcessor.h"
 #include <math.h>
 #include <stdio.h>
