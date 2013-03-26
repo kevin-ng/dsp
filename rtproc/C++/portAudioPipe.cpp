@@ -3,7 +3,7 @@
 
 #include "portAudioPipe.h"
 
-#ifndef WINDOWS
+#ifndef WIN32
 int _kbhit(void) {
     int ch;
     wtimeout(stdscr, 0);
