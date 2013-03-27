@@ -171,7 +171,7 @@ class SoundProcessor:
     def _fuzz(self):
         # Set up the "static" method variables
         if "T" not in self._fuzz.__dict__:
-            self._fuzz.__dict__['T'] = 0.005
+            self._fuzz.__dict__['T'] = 500.0
         if "G" not in self._fuzz.__dict__:
             self._fuzz.__dict__['G'] = 5.0
         if "limit" not in self._fuzz.__dict__:
